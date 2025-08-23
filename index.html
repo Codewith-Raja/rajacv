@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Raja Ram Pandit">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Raja Ram Pandit - Cybersecurity & Web Expert</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
@@ -489,6 +494,85 @@
                 navbar.classList.remove('scrolled');
             }
         });
+
+        // Mobile-specific optimizations
+        function handleMobileOptimizations() {
+            // Prevent zoom on double tap
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function (event) {
+                const now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+
+            // Smooth scrolling for mobile
+            if ('scrollBehavior' in document.documentElement.style) {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }
+
+            // Add touch feedback for buttons
+            const buttons = document.querySelectorAll('.btn, .skill-category, .education-card, .certification-card, .contact-item');
+            buttons.forEach(button => {
+                button.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                });
+                button.addEventListener('touchend', function() {
+                    this.style.transform = '';
+                });
+            });
+        }
+
+        // Initialize mobile optimizations
+        if ('ontouchstart' in window) {
+            handleMobileOptimizations();
+        }
+
+        // Handle orientation change
+        window.addEventListener('orientationchange', function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 100);
+        });
+
+        // Performance optimization for mobile
+        if (window.innerWidth <= 768) {
+            // Reduce animation duration on mobile
+            AOS.init({
+                duration: 600,
+                once: true,
+                offset: 50
+            });
+        }
+
+        // Ensure text visibility on mobile refresh
+        function ensureTextVisibility() {
+            const heroText = document.querySelector('.hero-text');
+            const heroTitle = document.querySelector('.hero-title');
+            const gradientText = document.querySelector('.gradient-text');
+            
+            if (heroText) {
+                heroText.style.opacity = '1';
+                heroText.style.visibility = 'visible';
+            }
+            if (heroTitle) {
+                heroTitle.style.opacity = '1';
+                heroTitle.style.visibility = 'visible';
+            }
+            if (gradientText) {
+                gradientText.style.opacity = '1';
+                gradientText.style.visibility = 'visible';
+            }
+        }
+
+        // Run on page load and after a short delay
+        ensureTextVisibility();
+        setTimeout(ensureTextVisibility, 100);
+        setTimeout(ensureTextVisibility, 500);
+
+        // Also run on window resize
+        window.addEventListener('resize', ensureTextVisibility);
     </script>
 </body>
 </html>
