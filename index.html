@@ -5,98 +5,489 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raja Ram Pandit - Cybersecurity & Web Expert</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="web.jpg">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="toggle-mode">
-            <button id="theme-toggle"><i class="fas fa-adjust"></i> Toggle Mode</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>RRP</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
+    </nav>
 
-        <header>
-            <div class="profile">
-                <img src="rajas.png" alt="Raja Ram Pandit">
-                <h1>Raja Ram Pandit</h1>
-                <h2>🚀 Cybersecurity | Networking | Web Development</h2>
-                <p>📍 Pepsicola, Kathmandu - 44600 | 📧 rp.rajaram.pandit@gmail.com | 📞 +977-9705058528</p>
-                <a href="resume.pdf" download class="download-btn">📄 Download Resume</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Raja Ram Pandit</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Cybersecurity Expert & Full-Stack Developer</h2>
+                    <p class="hero-description">
+                        Passionate cybersecurity professional with expertise in network security, 
+                        penetration testing, and secure web development. Creating innovative solutions 
+                        that protect digital assets and enhance online security.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="rajas.jpeg" alt="Raja Ram Pandit">
+                        </div>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pepsicola, Kathmandu</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>rp.rajaram.pandit@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+977-9705058528</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <section class="about">
-            <h2>👨‍💻 Profile</h2>
-            <p>I'm a cybersecurity enthusiast and web developer with expertise in securing networks, developing secure web applications, and mitigating cyber threats. Passionate about technology and security, I strive to create innovative solutions that enhance digital safety.</p>
-        </section>
-
-        <section class="skills">
-            <h2>⚡ Technical Skills</h2>
-            <div class="skill-grid">
-                <span>🔒 Cybersecurity</span>
-                <span>🌍 Network Security</span>
-                <span>💻 Web Development</span>
-                <span>🐍 Python</span>
-                <span>☕ Java</span>
-                <span>🖥️ Linux & Server Management</span>
-                <span>⚙️ Penetration Testing</span>
-                <span>☁️ AWS & Cloud Security</span>
-                <span>📊 Data Analytics</span>
-                <span>📜 Report Writing & Documentation</span>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
-        </section>
-
-        <section class="experience">
-            <h2>📜 Work Experience</h2>
-            <div class="exp-item">
-                <h3>🔹 DevOps Engineer - Volcus Soft Pvt. Ltd</h3>
-                <p>Bhaktapur-2, Kathmandu, Nepal</p>
-                <p>Managed customer accounts, conducted security checkups, and assisted in DevOps operations to improve performance.</p>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Cybersecurity Enthusiast & Web Developer</h3>
+                    <p>
+                        I'm a dedicated cybersecurity professional with a strong foundation in network security, 
+                        web development, and ethical hacking. My passion lies in creating secure, scalable 
+                        solutions that protect organizations from evolving cyber threats.
+                    </p>
+                    <p>
+                        With expertise in penetration testing, secure coding practices, and cloud security, 
+                        I help businesses build robust digital defenses while maintaining optimal performance 
+                        and user experience.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <img src="background.jpg" alt="Cybersecurity">
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="education">
-            <h2>🎓 Education</h2>
-            <div class="edu-item">
-                <h3>Bachelor of Networking & IT Security</h3>
-                <p>📍 Islington College, Nepal</p>
-                <p>📅 2022 - Present</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My expertise areas</p>
             </div>
-            <div class="edu-item">
-                <h3>Higher Secondary School (+2)</h3>
-                <p>📍 Model Secondary School, Janakpur</p>
-                <p>📅 2020 - 2022</p>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Penetration Testing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ethical Hacking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux Administration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DevOps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="certifications">
-            <h2>🏆 Certifications</h2>
-            <ul>
-                <li>🔐 Certified Ethical Hacker (CEH)</li>
-                <li>☁️ AWS Certified Security Specialist</li>
-                <li>💻 Cisco Certified Network Associate (CCNA)</li>
-            </ul>
-        </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="company">Volcus Soft Pvt. Ltd</span>
+                            <span class="duration">2023 - Present</span>
+                        </div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Bhaktapur-2, Kathmandu, Nepal</p>
+                        <ul class="achievements">
+                            <li>Managed customer accounts and conducted comprehensive security checkups</li>
+                            <li>Assisted in DevOps operations to improve system performance and reliability</li>
+                            <li>Implemented security best practices and compliance measures</li>
+                            <li>Collaborated with cross-functional teams to optimize deployment processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="interests">
-            <h2>🎯 Interests</h2>
-            <ul>
-                <li>🎮 Gaming</li>
-                <li>🎵 Music</li>
-                <li>🚴 Bike Riding</li>
-                <li>🌍 Social Works</li>
-            </ul>
-        </section>
+    <!-- Education Section -->
+    <section class="education-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Networking & IT Security</h3>
+                        <p class="institution">Islington College, Nepal</p>
+                        <p class="duration">2022 - Present</p>
+                        <p class="description">Comprehensive study of network security, cybersecurity principles, and IT infrastructure management.</p>
+                    </div>
+                </div>
+                <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Higher Secondary School (+2)</h3>
+                        <p class="institution">Model Secondary School, Janakpur</p>
+                        <p class="duration">2020 - 2022</p>
+                        <p class="description">Completed higher secondary education with focus on science and technology subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>© 2025 Raja Ram Pandit | All Rights Reserved</p>
-        </footer>
-    </div>
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional credentials</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Certified Ethical Hacker (CEH)</h3>
+                    <p>Advanced ethical hacking and penetration testing certification</p>
+                </div>
+                <div class="certification-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AWS Certified Security Specialist</h3>
+                    <p>Cloud security and AWS infrastructure protection expertise</p>
+                </div>
+                <div class="certification-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Cisco CCNA</h3>
+                    <p>Network administration and Cisco infrastructure management</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>rp.rajaram.pandit@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+977-9705058528</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pepsicola, Kathmandu - 44600, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span id="btnText">Send Message</span>
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Raja Ram Pandit. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your EmailJS public key
+        })();
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            submitBtn.classList.add('loading');
+            btnText.textContent = 'Sending...';
+            formMessage.className = 'form-message';
+            formMessage.style.display = 'none';
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_email: 'rajarampandit179@gmail.com'
+            };
+
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+                .then(function(response) {
+                    // Success
+                    formMessage.className = 'form-message success';
+                    formMessage.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                    formMessage.style.display = 'block';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Reset button
+                    submitBtn.classList.remove('loading');
+                    btnText.textContent = 'Send Message';
+                }, function(error) {
+                    // Error
+                    formMessage.className = 'form-message error';
+                    formMessage.textContent = 'Failed to send message. Please try again or contact me directly.';
+                    formMessage.style.display = 'block';
+                    
+                    // Reset button
+                    submitBtn.classList.remove('loading');
+                    btnText.textContent = 'Send Message';
+                });
+        });
+
+        // Theme Toggle
         const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
         themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
