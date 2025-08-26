@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#667eea">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Raja Ram Pandit">
-    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Raja Ram Pandit - Cybersecurity Expert, Web Developer, and Tech Enthusiast. Explore my journey through cybersecurity, development, and innovation.">
+    <meta name="keywords" content="cybersecurity, web development, ethical hacking, network security, python, java, aws, devops">
+    <meta name="author" content="Raja Ram Pandit">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Raja Ram Pandit - Cybersecurity & Web Expert">
+    <meta property="og:description" content="Cybersecurity professional with expertise in network security, penetration testing, and secure web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rajarampandit.com.np">
+    <meta property="og:image" content="rajas.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raja Ram Pandit - Cybersecurity & Web Expert">
+    <meta name="twitter:description" content="Cybersecurity professional with expertise in network security, penetration testing, and secure web development.">
     <title>Raja Ram Pandit - Cybersecurity & Web Expert</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -20,18 +27,31 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span>RRP</span>
+                <a href="#home">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text-container">
+                        <span class="logo-text">Raja Ram Pandit</span>
+                        <span class="logo-subtitle">Cybersecurity Expert</span>
+                    </div>
+                </a>
             </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#blog" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="theme-toggle">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
@@ -40,46 +60,137 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="gradient-text">Raja Ram Pandit</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Cybersecurity Expert & Full-Stack Developer</h2>
-                    <p class="hero-description">
-                        Passionate cybersecurity professional with expertise in network security, 
-                        penetration testing, and secure web development. Creating innovative solutions 
-                        that protect digital assets and enhance online security.
-                    </p>
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="hero-title-container">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Raja Ram Pandit</span>
+                        </h1>
+                        <div class="title-accent"></div>
+                    </div>
+                    <h2 class="hero-subtitle">
+                        <span class="subtitle-prefix">Professional</span>
+                        Cybersecurity Expert & Full-Stack Developer
+                    </h2>
+                    <div class="hero-description">
+                        <p class="description-main">
+                            Passionate cybersecurity professional with expertise in network security, 
+                            penetration testing, and secure web development.
+                        </p>
+                        <p class="description-sub">
+                            Creating innovative solutions that protect digital assets and enhance online security.
+                        </p>
+                    </div>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-paper-plane"></i>
                             Get In Touch
                         </a>
                         <a href="resume.pdf" download class="btn btn-secondary">
-                            <i class="fas fa-download"></i>
+                            <i class="fas fa-file-download"></i>
                             Download CV
                         </a>
+                        <a href="#blog" class="btn btn-outline">
+                            <i class="fas fa-newspaper"></i>
+                            Read My Blog
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-accent"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-accent"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                            <div class="stat-accent"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-image" data-aos="fade-left">
                     <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="rajas.jpeg" alt="Raja Ram Pandit">
+                        <div class="card-header">
+                            <div class="profile-image">
+                                <img src="rajas.jpeg" alt="Raja Ram Pandit">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <i class="fas fa-user-check"></i>
+                                        <span>Available for Projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                <span class="status-text">Available</span>
+                            </div>
                         </div>
                         <div class="profile-info">
                             <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Pepsicola, Kathmandu</span>
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Janakpurdham 08, Dhanusha, Nepal</span>
+                                </div>
                             </div>
                             <div class="info-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>rp.rajaram.pandit@gmail.com</span>
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">rp.rajaram.pandit@gmail.com</span>
+                                </div>
                             </div>
                             <div class="info-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+977-9705058528</span>
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">+977-9705058528</span>
+                                </div>
                             </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="social-tooltip">LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                                <span class="social-tooltip">GitHub</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter"></i>
+                                <span class="social-tooltip">Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Portfolio">
+                                <i class="fas fa-globe"></i>
+                                <span class="social-tooltip">Portfolio</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -110,24 +221,34 @@
                         I help businesses build robust digital defenses while maintaining optimal performance 
                         and user experience.
                     </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security-First Approach</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Projects Completed</span>
+                        <div class="feature-item">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Practices</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Innovation Driven</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
                     <div class="image-container">
                         <img src="background.jpg" alt="Cybersecurity">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Cybersecurity Expert</h4>
+                                <p>Protecting digital assets with cutting-edge security solutions</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,7 +264,10 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">Penetration Testing</span>
@@ -167,7 +291,10 @@
                 </div>
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Development</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">Python</span>
@@ -191,7 +318,10 @@
                 </div>
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">AWS Security</span>
@@ -231,7 +361,7 @@
                         <div class="timeline-header">
                             <h3>DevOps Engineer</h3>
                             <span class="company">Volcus Soft Pvt. Ltd</span>
-                            <span class="duration">2023 - Present</span>
+                            <span class="duration">2024 - 2025</span>
                         </div>
                         <p class="location"><i class="fas fa-map-marker-alt"></i> Bhaktapur-2, Kathmandu, Nepal</p>
                         <ul class="achievements">
@@ -240,8 +370,97 @@
                             <li>Implemented security best practices and compliance measures</li>
                             <li>Collaborated with cross-functional teams to optimize deployment processes</li>
                         </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Linux</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-subtitle">Insights from my cybersecurity journey</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="background.jpg" alt="Cybersecurity Fundamentals">
+                        <div class="blog-category">Security</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> Jan 15, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Cybersecurity Fundamentals: Building a Strong Foundation</h3>
+                        <p class="blog-excerpt">
+                            Essential principles and practices for establishing robust cybersecurity protocols in any organization.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">cybersecurity</span>
+                            <span class="tag">security</span>
+                            <span class="tag">fundamentals</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="web.jpg" alt="Web Development Security">
+                        <div class="blog-category">Development</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> Jan 10, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blog-title">Secure Web Development: Best Practices for 2025</h3>
+                        <p class="blog-excerpt">
+                            Modern security practices and techniques for building secure web applications in the current threat landscape.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">web-development</span>
+                            <span class="tag">security</span>
+                            <span class="tag">best-practices</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="background.jpg" alt="Penetration Testing">
+                        <div class="blog-category">Testing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> Jan 5, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-title">Penetration Testing: A Comprehensive Guide</h3>
+                        <p class="blog-excerpt">
+                            Step-by-step guide to conducting effective penetration tests and identifying security vulnerabilities.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">penetration-testing</span>
+                            <span class="tag">ethical-hacking</span>
+                            <span class="tag">security</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta" data-aos="fade-up">
+                <a href="#" class="btn btn-primary">View All Blog Posts</a>
             </div>
         </div>
     </section>
@@ -261,8 +480,13 @@
                     <div class="education-content">
                         <h3>Bachelor of Networking & IT Security</h3>
                         <p class="institution">Islington College, Nepal</p>
-                        <p class="duration">2022 - Present</p>
+                        <p class="duration">2022 - 2025</p>
                         <p class="description">Comprehensive study of network security, cybersecurity principles, and IT infrastructure management.</p>
+                        <div class="education-tags">
+                            <span class="tag">Networking</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">IT Infrastructure</span>
+                        </div>
                     </div>
                 </div>
                 <div class="education-card" data-aos="fade-up" data-aos-delay="200">
@@ -274,6 +498,11 @@
                         <p class="institution">Model Secondary School, Janakpur</p>
                         <p class="duration">2020 - 2022</p>
                         <p class="description">Completed higher secondary education with focus on science and technology subjects.</p>
+                        <div class="education-tags">
+                            <span class="tag">Science</span>
+                            <span class="tag">Technology</span>
+                            <span class="tag">Mathematics</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,6 +523,10 @@
                     </div>
                     <h3>Certified Ethical Hacker (CEH)</h3>
                     <p>Advanced ethical hacking and penetration testing certification</p>
+                    <div class="cert-meta">
+                        <span class="cert-issuer">EC-Council</span>
+                        <span class="cert-year">2024</span>
+                    </div>
                 </div>
                 <div class="certification-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="cert-icon">
@@ -301,6 +534,10 @@
                     </div>
                     <h3>AWS Certified Security Specialist</h3>
                     <p>Cloud security and AWS infrastructure protection expertise</p>
+                    <div class="cert-meta">
+                        <span class="cert-issuer">Amazon Web Services</span>
+                        <span class="cert-year">2023</span>
+                    </div>
                 </div>
                 <div class="certification-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="cert-icon">
@@ -308,6 +545,10 @@
                     </div>
                     <h3>Cisco CCNA</h3>
                     <p>Network administration and Cisco infrastructure management</p>
+                    <div class="cert-meta">
+                        <span class="cert-issuer">Cisco</span>
+                        <span class="cert-year">2023</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,6 +590,14 @@
                             <p>Pepsicola, Kathmandu - 44600, Nepal</p>
                         </div>
                     </div>
+                    <div class="contact-social">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left">
                     <form id="contactForm">
@@ -379,13 +628,40 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Raja Ram Pandit. All rights reserved.</p>
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Raja Ram Pandit</h3>
+                        <p>Cybersecurity Expert & Full-Stack Developer</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Cybersecurity Consulting</li>
+                            <li>Penetration Testing</li>
+                            <li>Web Development</li>
+                            <li>Network Security</li>
+                            <li>DevOps Solutions</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-social">
-                    <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Raja Ram Pandit. All rights reserved.</p>
+                    <p>Built with ❤️ for cybersecurity excellence</p>
                 </div>
             </div>
         </div>
@@ -405,6 +681,26 @@
             duration: 1000,
             once: true,
             offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const body = document.body;
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
         });
 
         // Contact Form Handling
@@ -459,7 +755,6 @@
 
         // Theme Toggle
         const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
         const icon = themeToggle.querySelector('i');
 
         themeToggle.addEventListener('click', () => {
@@ -513,7 +808,7 @@
             }
 
             // Add touch feedback for buttons
-            const buttons = document.querySelectorAll('.btn, .skill-category, .education-card, .certification-card, .contact-item');
+            const buttons = document.querySelectorAll('.btn, .skill-category, .education-card, .certification-card, .contact-item, .blog-card');
             buttons.forEach(button => {
                 button.addEventListener('touchstart', function() {
                     this.style.transform = 'scale(0.98)';
