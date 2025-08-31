@@ -1,2 +1,0 @@
-# rajacv
-Basic CV Webpage
